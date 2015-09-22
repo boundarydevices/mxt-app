@@ -1,4 +1,4 @@
-LOCAL_PATH := $(my-dir)
+LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 
 LOCAL_C_INCLUDES := $(SRC_PATH)
@@ -15,7 +15,7 @@ LOCAL_SRC_FILES := \
   i2c_dev/i2c_dev_device.c \
   hidraw/hidraw_device.c \
   usb/usb_device.c
-LOCAL_MODULE := libmaxtouch
+LOCAL_MODULE := maxtouch
 LOCAL_STATIC_LIBRARIES := libusbdroid
 
 include $(BUILD_STATIC_LIBRARY)
