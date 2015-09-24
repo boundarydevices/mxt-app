@@ -16,7 +16,7 @@ LOCAL_SRC_FILES := \
   serial_data.c \
   self_cap.c \
   signal.c
-LOCAL_LDLIBS := -llog
+LOCAL_SHARED_LIBRARIES := liblog
 LOCAL_STATIC_LIBRARIES := maxtouch libusbdroid
 LOCAL_MODULE := mxt-app
 
