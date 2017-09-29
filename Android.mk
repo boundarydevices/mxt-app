@@ -1,8 +1,8 @@
 LOCAL_PATH := $(call my-dir)
 
-TOP_DIR := $(LOCAL_PATH)/..
+TOP_DIR := $(LOCAL_PATH)
 
-GIT_VERSION = `sh -c 'build-aux/version.sh'`
+GIT_VERSION = `sh -c '$(TOP_DIR)/build-aux/version.sh'`
 
 subdirs := $(addprefix $(TOP_DIR)/,$(addsuffix /Android.mk, \
     src/libmaxtouch \
